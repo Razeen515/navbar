@@ -3,46 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dindedrop Navbar</title>
+  <title>Dinedrop Navbar</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .navbar {
       background-color: #003366; 
+      padding: 10px 20px; 
     }
     .navbar-brand {
-      font-size: 24px;
+      font-size: 20px; 
       font-weight: bold;
       color: white;
       display: flex;
       align-items: center;
     }
     .navbar-brand img {
-      height: 60px; 
-      margin-right: 20px; 
+      height: 50px; 
+      margin-right: 15px; 
     }
     .navbar-nav .nav-link {
       color: white;
-      font-size: 18px; 
+      font-size: 16px; 
       margin-left: 10px; 
     }
     .navbar-nav .nav-link:hover {
       text-decoration: underline;
     }
-    .dropdown-menu {
-      background-color: #036;
-      width: 1000x; 
-      padding: 15px; 
-      border-radius: 10px; 
+    .navbar-toggler {
+      border-color: rgb(255, 255, 255); 
     }
-    .dropdown-menu .dropdown-item {
-      color: white;
-      font-size: 30px; 
-      padding: 10px 15px; 
-    }
-    .dropdown-menu .dropdown-item:hover {
-      background-color: #00509e;
-      color: white;
+    .navbar-toggler-icon {
+      background-color: rgb(136, 150, 174); 
     }
   </style>
 </head>
@@ -52,9 +44,9 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <!-- Logo and Brand -->
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#home">
       <img src="https://media.istockphoto.com/id/1190040680/vector/plastic-bag-food-delivery-icon.jpg?s=612x612&w=0&k=20&c=rH4wx01088_bKVXSppri6XSj54ovSZDiW4fe5YhHJE8=" alt="Logo">
-      <h1>𝘿𝙄𝙉𝙀 𝘿𝙍𝙊𝙋</h1>
+      <span>𝘿𝙄𝙉𝙀 𝘿𝙍𝙊𝙋</span>
     </a>
     <!-- Toggle button for mobile view -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,29 +56,37 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+          <a class="nav-link" href="#about">About Us</a>
         </li>
-        <!-- Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-list"></i>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Home</a></li>
-            <li><a class="dropdown-item" href="#">About Us</a></li>
-            <li><a class="dropdown-item" href="#">Blog</a></li>
-            <li><a class="dropdown-item" href="#">Testimonial</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonial">Testimonial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#search"><i class="bi bi-search"></i></a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Bootstrap JS (Optional for navbar toggling) -->
+<!-- Sections for navigation -->
+<div id="home"></div>
+<div id="about"></div>
+<div id="blog"></div>
+<div id="testimonial"></div>
+<div id="login"></div>
+<div id="search"></div>
+
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
